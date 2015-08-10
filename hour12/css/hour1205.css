@@ -1,0 +1,6 @@
+img{width:40px;}
+span{width:40px; display: inline-block;}
+#plane{ position:fixed; width:100px;}
+#cone1{ position:fixed; top:100px; left: 500px; width:50px;}
+#cone2{ position:fixed; top:200px; left: 100px; width:50px;}
+#cone3{ position:fixed; top:300px; left: 300px; width:50px;}

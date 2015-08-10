@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Hour 13-2</title>
+		<meta charset="UTF-8" />
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/hour1302.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/hour1302.css" />
+	</head>
+	<body>
+		<div id="box">
+			<p>Check Out</p>
+			<form>
+				<span>Shipping Info</span><br />
+				<div id="shipInfo">
+					<input type="text" id="name" /><label>Name</label><br />
+					<input type="text" id="addr" /><label>Address</label><br />
+					<input type="text" id="city" /><label>City</label>
+					<select class="state" id="state"> </select>
+					<input type="text" id="zip"/><label>Zip</label><br />
+				</div>
+				<span>Billing Info</span><br />
+				<div id="billInfo">
+					<input type="checkbox" id="cbSame" />
+						<label for="cbSame">Same as Shipping</label><br />
+					<input type="text" id="nameB" /><label>Name on Card</label><br />
+					<input type="text" id="addrB" /><label>Address</label><br />
+					<input type="text" id="cityB" /><label>City</label>
+					<select class="state" id="stateB"> </select>
+					<input type="text" id="zipB"/><label>Zip</label><br />
+					<input type="radio" name="ptype" id="visa" />
+						<label for="visa"><img src="images/visa.png"/></label>
+					<input type="radio" name="ptype" id="mc" />
+						<label for="mc"><img src="images/mc.png"/></label>
+					<input type="radio" name="ptype" id="amex" />
+						<label for="amex"><img src="images/amex.png"/></label>
+					<input type="radio" name="ptype" id="ppal" />
+						<label for="ppal"><img src="images/ppal.png"/></label><br />
+					<div id="ccInfo">
+						<input type="text" id="cardNum" /><label>Card Number</label>
+						<input type="text" id="csc" /><label>CSC</label><br />
+						<label>Expires</label><select id="expiresY"> </select>
+						<select id="expiresM"> </select><br />
+					</div>					
+					<div id="ppInfo">
+						<input type="text" id="ppEmail" /><label>PayPal Email</label><br />
+						<input type="text" id="ppPW" /><label>PayPal Password</label><br />
+					</div>					
+				</div>
+				<input type="submit" value="Submit" id="submitB" />
+				<input type="button" value="Reset" id="resetB" />
+			</form>
+		</div>
+	</body>
+</html>

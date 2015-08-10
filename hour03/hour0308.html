@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Hour 3-8</title>
+		<meta charset="UTF-8" />
+	</head>
+	<body>
+		<canvas id="myCanvas" width="300" height="300">
+			Sorry Your Browser Doesn't Support HTML5 Canvas
+		</canvas>
+		<script>
+			var c=document.getElementById("myCanvas");
+			var ctx=c.getContext("2d");
+			ctx.lineWidth="1";
+			ctx.strokeStyle="blue";
+			//top
+			ctx.beginPath();
+			var grd=ctx.createLinearGradient(100,50,100,5);
+			grd.addColorStop(0,"blue");
+			grd.addColorStop(1,"white");
+			ctx.fillStyle=grd;
+			grd.addColorStop(0,"blue");
+			ctx.moveTo(1,25);
+			ctx.lineTo(100,5);
+			ctx.lineTo(200,25);
+			ctx.lineTo(100,50);
+			ctx.fill();
+			ctx.stroke();
+			//left
+			ctx.beginPath();
+			var grd=ctx.createLinearGradient(0,125,0,25);
+			grd.addColorStop(0,"blue");
+			grd.addColorStop(1,"white");
+			ctx.fillStyle=grd;
+			ctx.moveTo(1,25);
+			ctx.lineTo(100,50);
+			ctx.lineTo(100,165);
+			ctx.lineTo(1,125);
+			ctx.lineTo(1,25);
+			ctx.fill();
+			ctx.stroke();
+			//right
+			ctx.beginPath();
+			var grd=ctx.createLinearGradient(100,50,200,25);
+			grd.addColorStop(0,"blue");
+			grd.addColorStop(1,"white");
+			ctx.fillStyle=grd;
+			ctx.moveTo(100,50);
+			ctx.lineTol(200,25);
+			ctx.lineTo(200,125);
+			ctx.lineTo(100,165);
+			ctx.fill();
+			ctx.stroke();			
+		</script>
+		<video width="320" height="240" controls>
+			<source src="images/movie.mp4" type="video/mp4"></source>
+			<source src="images/movie.ogg" type="video/ogg"></source>
+			Sorry, your browser does not support the video tag.
+		</video>
+		<br/>
+		<audio controls>
+			<source src="song.mp3" type="audio/mp3"></source>
+			Sorry, your browser does not support the audio element.
+		</audio>
+	</body>
+</html>

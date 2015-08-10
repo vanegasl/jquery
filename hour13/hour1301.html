@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Hour 13-1</title>
+		<meta charset="UTF-8" />
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/hour1301.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/hour1301.css" />
+	</head>
+	<body>
+		<div><form id="formA">
+			<label>Time</label><br />
+			<input type="image" src="images/shield.png" />
+			<input type="image" src="images/horse.png" /><br />
+			<input name="title" type="text" /><br />
+			<textarea name="comments">&nbsp;</textarea><br />
+			<input type="radio" name="gender" value="male" />Male
+			<input type="radio" name="gender" value="female" />Female<br />
+			<input type="checkbox" name="registered" />Registered<br />
+			<select size="3" multiple name="count">
+				<option>One</option><option>Two</option><option>Three</option>
+			</select><br />
+			<input id="resetB" type="button" value="Reset"/>
+			<input id="serializeB" type="button" value="Serialize" />
+		</form></div>
+		<div><form id="formB">
+			<label>Destination</label><br />
+			<input type="image" alt="No Image" /><br />
+			<input type="text" /><br />
+			<textarea>&nbsp;</textarea><br />
+			<input type="radio" name="gender" value="male" />Male
+			<input type="radio" name="gender" value="female" />Female<br />
+			<input type="checkbox" />Checked<br />
+			<select size="3" multiple>
+				<option>One</option><option>Two</option><option>Three</option>
+			</select>
+		</form></div>
+		<div><label>Serialized</label><p id="serialized">&nbsp;</p></div>
+		<div><label>Serialized Array</label><span id="serializedA">&nbsp;</span></div>
+	</body>
+</html>

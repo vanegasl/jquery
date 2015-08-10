@@ -1,0 +1,51 @@
+img {
+	width: 48px; height: 48px;
+	margin: 5px;
+	float: left;
+}
+#buttons, #songInfo {
+	position: fixed;
+	background-color: black;
+	padding: 5px;
+	display: inline-block;
+	border: 8px ridge blue;
+	border-radius: 5px;
+}
+#songInfo {
+	top: 70px;
+	left: 100px;
+	height: 150px; width: 300px;
+	z-index: 1;
+}
+#buttons {
+	top: 200px;
+	left: 140px;
+	z-index: 2;
+}
+#title {
+	color: lime;
+	font-weight: bold;
+	font-size: 30px;
+	position: relative;
+	top:-20px;
+}
+#artist {
+	color: cyan;
+	font-size: 20px;
+	position: relative;
+	left: 30px;
+	top: -50px;
+}
+#album {
+	color: yellow;
+	position: relative;
+	left: 60px;
+	top: -70px;
+}
+h1 {
+	display: inline-block;
+	border: 1px dotted silver;
+	padding: 5px;
+	margin: 0px;
+	border-radius: 5px;
+}

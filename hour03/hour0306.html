@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Form Example</title>
+		<meta charset="UTF-8"/>
+	</head>
+	<body>
+		<form>
+			<fieldset>
+				<legend>Contact Info:</legend>
+				Name: <input type="text" name="name" /><br />
+				Address: <input type="text" name="address" />
+				<select name="state">
+					<option value="UT">Utah</option>
+					<option value="CA">California</option>
+					<option value="NY">New York</option>
+				</select>
+			</fieldset>
+			<input id="maleRB" type="radio" name="gender" value="male" />
+			<label for="maleRB">Male</label>
+			<input id="femaleRB" type="radio" name="gender" value="female" />
+			<label for="femaleRB">Female</label><br />
+			<textarea rows="10" cols="30">comments</textarea><br />
+			<input id="newsCB" type="checkbox" name="news" value="news" />
+			<label for="newsCB">
+				I would like to subscribe to the newsletter.
+			</label><br />
+			<button type="submit" name="SubmitButton" value="Submit">Submit</button>
+			<button type="reset" name="ResetButton" value="Reset">Reset</button>
+		</form>
+	</body>
+</html>

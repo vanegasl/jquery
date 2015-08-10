@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Hour 6-3</title>
+		<meta charset="UTF-8" />
+		<script>
+			function writeIt() {
+				var characters = new Array();
+				characters.push(new Character("Gandold", "the White", "Middle Earth", "Wizard"));
+				characters.push(new Character("Bilbo", "Baggins", "Shire", "Hobbit"));
+				characters.push(new Character("Frodo", "Baggins", "Shire", "Hobbit"));
+				characters.push(new Character("Aragorn", "son of Arathorn", "Dunedain", "Man"));
+				legolas = new Character("Legolas", "", "", "");
+				legolas.land = "Woodland Realm";
+				legolas.race = "Elf";
+				characters.push(legolas);
+				for (var i=0; i<characters.length; i++) {
+					var character = characters[i];
+					character.number = i+1;
+					document.write(	character.number + ". " +
+									character.getFullName() + " " +
+									character.getDetails() + "<br>" );
+				}
+			}
+			function Character(first, last, land, race) {
+				this.first = first;
+				this.last = last;
+				this.land = land;
+				this.race = race;
+			}
+			Character.prototype = {
+				getFullName: function() {
+					return this.first + " " + this.last;
+				},
+				getDetails: function() {
+					return "is a " + this.race + " of the " + this.land;
+				}
+			};
+		</script>
+	</head>
+	<body onload="writeIt()">
+	</body>
+</html>

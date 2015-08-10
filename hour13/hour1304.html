@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Hour 13-4</title>
+		<meta charset="UTF-8" />
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+		<script type="text/javascript" src="../js/jquery.validate.min.js"></script>
+		<script type="text/javascript" src="js/hour1304.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/hour1304.css" />
+	</head>
+	<body>
+		<div id="container"><p>Join the Battle</p>
+			<form action="test.html" method="get" name="test" id="simpleForm">
+				<label>Name</label><input name="name" type="text" /><br />
+				<label>Email</label><input name="email" type="text" /><br />
+				<label>Password</label><input name="password1" type="password" /><br />
+				<label>Confirm</label><input name="password2" id="password2" type="password" /><br />
+				<label>Last Battle</label><input name="battle" type="text" /><br />
+				<select name="weapon" multiple size="4">
+					<option>Sword</option><option>Bow</option><option>Axe</option>
+					<option>Really Big Rock</option>
+				</select><br />
+				<input type="radio" name="hands" value="right" /><label>Right Handed</label>
+				<input type="radio" name="hands" value="left" /><label>Left Handed</label><br />
+				<div>
+					<input type="checkbox" name="armor" value="helmet" /><label>Helmet</label>
+					<input type="checkbox" name="armor" value="shield" /><label>Shield</label><br />
+					<input type="checkbox" name="armor" value="chainmail" /><label>Chainmail</label>
+					<input type="checkbox" name="armor" value="plated" /><label>Plated</label><br />
+					<input type="checkbox" name="armor" value="gloves" /><label>Gloves</label>
+					<input type="checkbox" name="armor" value="boots" /><label>Boots</label>
+				</div>
+				<label>Comments:</label><br /><textarea></textarea><br>
+				<input type="submit" value="Engage" />
+			</form>
+		</div>
+	</body>
+</html>

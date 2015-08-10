@@ -1,0 +1,19 @@
+label{display:inline-block;min-width: 100px; text-align: right;}
+input+label{text-align: left;}
+input.error, select.error{background-color: #FFDDDD; color: #660000;}
+label.error{color:red;}
+br{clear:both;}
+form{margin:15px;}
+div{vertical-align: middle;
+	padding-bottom: 20px;
+	background: -moz-linear-gradient(bottom, #FFDDDD, #FFF0F0 175px);
+	border-radius: 10px; box-shadow: 0px 0px 8px rgba(0,0,0,0.3);
+	font:italic 15px/30px Georgia, serif;}
+#container{width: 600px; height: auto;}
+p{
+	color:white; background-color: #660000; font-weight: bold; margin: 0px;
+	text-align: center; border-radius: 10px 10px 0px 0px;}
+select, textarea, input, option:checked{
+	border-radius: 10px; margin: 5px; border:4px groove blue;}
+select:focus, textarea:focus, input:focus{
+	border-radius: 10px; margin: 5px; border:6px groove #3377FF;}

@@ -1,0 +1,16 @@
+#blue{color: blue;}
+#tight{letter-spacing: -1px}
+#half-height{line-height: 50%}
+#align-center{text-align: center}
+#align-right{text-align: right}
+#indent{text-indent: 50px;}
+#underline{text-decoration: underline;}
+#strike-through{text-decoration: line-through;}
+#first-cap{text-transform: capitalize;}
+#uppercase{text-transform: uppercase;}
+#roman{font: italic bold 30px "Times New Roman", serif}
+#blackadder{
+	font-family: "blackadder itc";
+	font-size: 25px;
+	font-weight: bold;
+}

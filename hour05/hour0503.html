@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Hour 5 - 3</title>
+		<meta charset="UTF-8" />
+		<script>
+			function writeIt() {
+				var hour = new Date().getHours();
+				var timeOfDay;
+				if(hour>=7 && hour<12) {
+					document.write("Good Morning!");
+					if(hour>=8 && hour<10) {
+						document.write("Go to work!");
+					}
+					timeOfDay = "morning";
+				} else if (hour>=12 && hour < 18) {
+					document.write("Good Day!");
+					timeOfDay = "day";
+				} else {
+					document.write("Good Night!");
+					timeOfDay = "night";
+				}
+				switch(timeOfDay) {
+					case "morning":
+					case "day":
+						document.write("<img src='images/day.png' />");
+						break;
+					case "night":
+						document.write("<img src='images/night.png' />");
+						break;
+					default:
+						document.write("<img src='images/day.png' />");
+						break;
+				}
+			}
+		</script>
+	</head>
+	<body onload="writeIt()">
+	</body>
+</html>
